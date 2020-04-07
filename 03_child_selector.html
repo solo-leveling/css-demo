@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Child Selectors</title>
+    <style>
+        .redbox > span{
+            color: red;
+        }
+        p > span{
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <ul class="redbox">
+        <span>Hello</span>
+        <li>Myanmar</li>
+        <li><span>Thailand</span></li>
+    </ul>
+    <p><span>Mandalay</span> is second largest city of Myanmar.</p>
+</body>
+</html>

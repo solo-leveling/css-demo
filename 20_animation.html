@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <style>
+         .box{
+            position: relative;
+            margin-left: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            animation-name: my;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        } 
+        .box:hover{
+            background-color: thistle;
+        }
+        .greenbox{
+            position: relative;
+            margin-left: 200px;
+            animation-name: my1;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            width: 100px;height: 100px;
+   
+        }
+        .redbox{
+            position: relative;
+            margin-left: 300px;
+            animation-name: my2;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            width: 100px;height: 100px;
+   
+        }
+        .bluebox{
+            position: relative;
+            margin-left: 400px;
+            animation-name: my3;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            width: 100px;height: 100px;
+   
+        }
+        .yellowbox{
+            position: relative;
+            margin-left: 500px;
+            animation-name: my4;
+            animation-duration: 6s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            width: 100px;height: 100px;
+   
+        }
+        /* @keyframes my{
+            from{top: 0;left: 0;width: 300px; height: 300px;}
+            to{top: 300px;left: 300px;width: 200px; height: 200px;background-color: red;}
+        } */
+        @keyframes my{
+            0%{background-color: green;border-radius: 0 0 0 0;left: 0;top: 0;right: 0;bottom: 0;}
+            25%{background-color: red;border-radius: 0 50% 0 0;left: 300px;top: 0;right: 0;bottom: 0;}
+            50%{background-color: gray;border-radius: 0 50% 50% 0 ;left: 300px;top: 200px;right: 0;bottom: 0;}
+            75%{background-color: black;border-radius: 0 50% 50% 50% ;left: 0;top: 200px;right: 300px;bottom: 0;}
+            100%{background-color: yellow;border-radius: 50% 50% 50% 50% ;left: 0;top: 0;right: 300px;bottom: 300px;}
+        }
+        @keyframes my1{
+            0%{background-color: green;border-radius: 0 0 0 0;left: 0;top: 0;right: 0;bottom: 0;}
+            25%{background-color: red;border-radius: 0 50% 0 0;left: 300px;top: 0;right: 0;bottom: 0;}
+            50%{background-color: gray;border-radius: 0 50% 50% 0 ;left: 300px;top: 200px;right: 0;bottom: 0;}
+            75%{background-color: black;border-radius: 0 50% 50% 50% ;left: 0;top: 200px;right: 300px;bottom: 0;}
+            100%{background-color: yellow;border-radius: 50% 50% 50% 50% ;left: 0;top: 0;right: 300px;bottom: 300px;}
+        }
+        @keyframes my2{
+            0%{background-color: green;border-radius: 0 0 0 0;left: 0;top: 0;right: 0;bottom: 0;}
+            25%{background-color: red;border-radius: 0 50% 0 0;left: 300px;top: 0;right: 0;bottom: 0;}
+            50%{background-color: gray;border-radius: 0 50% 50% 0 ;left: 300px;top: 200px;right: 0;bottom: 0;}
+            75%{background-color: black;border-radius: 0 50% 50% 50% ;left: 0;top: 200px;right: 300px;bottom: 0;}
+            100%{background-color: yellow;border-radius: 50% 50% 50% 50% ;left: 0;top: 0;right: 300px;bottom: 300px;}
+        }
+        @keyframes my3{
+            0%{background-color: green;border-radius: 0 0 0 0;left: 0;top: 0;right: 0;bottom: 0;}
+            25%{background-color: red;border-radius: 0 50% 0 0;left: 300px;top: 0;right: 0;bottom: 0;}
+            50%{background-color: gray;border-radius: 0 50% 50% 0 ;left: 300px;top: 200px;right: 0;bottom: 0;}
+            75%{background-color: black;border-radius: 0 50% 50% 50% ;left: 0;top: 200px;right: 300px;bottom: 0;}
+            100%{background-color: yellow;border-radius: 50% 50% 50% 50% ;left: 0;top: 0;right: 300px;bottom: 300px;}
+        }
+        @keyframes my4{
+            0%{background-color: green;border-radius: 0 0 0 0;left: 0;top: 0;right: 0;bottom: 0;}
+            25%{background-color: red;border-radius: 0 50% 0 0;left: 300px;top: 0;right: 0;bottom: 0;}
+            50%{background-color: gray;border-radius: 0 50% 50% 0 ;left: 300px;top: 200px;right: 0;bottom: 0;}
+            75%{background-color: black;border-radius: 0 50% 50% 50% ;left: 0;top: 200px;right: 300px;bottom: 0;}
+            100%{background-color: yellow;border-radius: 50% 50% 50% 50% ;left: 0;top: 0;right: 300px;bottom: 300px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+    <div class="greenbox"></div><div class="redbox"></div><div class="bluebox"></div><div class="yellowbox"></div>
+</body>
+</html>

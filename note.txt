@@ -1,0 +1,10 @@
+CSS
+=====
+1. selectors
+    -elements selectors
+    -id selectors
+    -class selectors
+    -descendant selectors
+    -child selectors
+    -attribute selectors
+2. properties
